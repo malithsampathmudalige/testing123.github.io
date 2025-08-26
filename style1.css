@@ -1,0 +1,364 @@
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: #d15f25 #faecda;
+    scrollbar-width: thin;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4d6b4;
+}
+header {
+    background: #381410;
+    color: white;
+    padding: 5px 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#home{
+  background: linear-gradient(rgba(212, 188, 180, 0.6), rgba(42, 37, 37, 0.3)), 
+  url('p6.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    height: 100vh;
+    justify-content: center;
+    
+}
+
+#home h2{
+    text-align: center;
+    font-size: 50px;
+    color: #faecda;
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+.btn {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: #faecda;
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  
+  .btn::after {
+    background-color: #d15f25;
+  }
+  
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  
+#home p{
+    font-size: 20px;
+    color: #faecda;
+}
+
+#home h1{
+    font-size: 50px;
+    color: #faecda;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+section {
+    padding: 20px;
+}
+
+#about{
+    background-color: #fbf6ef;
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.col1,.col2{
+    width: 45%;
+    background-color: #d9a770;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    color: #923f2b;
+}
+
+.col1 img{
+
+    border-radius: 20px;
+    height: 200px;
+}
+.recipe-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.recipe {
+    width: 325px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 20px;
+} 
+
+ h2
+{
+    background: linear-gradient(to right, #ffcc00 0%, #ff5733 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-weight: bold;
+      
+}
+.tiktok-embed {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  }
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.image-gallery .img_box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    background-color: #e2a355;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.image-gallery .img_box img {
+    width: 200px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 15px;
+}
+
+.img_box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f3dcb5;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .card__content .rbtn{
+    background: #923f2b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    margin: 10px;
+    text-decoration: none;
+  }
+
+
+  
+  .img_box:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .img_box:hover img {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  
+
+#contact{
+  background-color: #fbf6ef;
+}
+
+.con-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.con
+{
+    width: 48%;
+}
+
+.con a{
+    text-decoration: none;
+    color: #060606;
+    display: block;
+    color: #923f2b;
+    font-size: 20px;
+
+
+}
+  
+i {
+    font-size: 30px; /* Adjust icon size */
+    color: #ff5733; /* Change color */
+    margin-right: 10px; /* Add spacing */
+    padding: 20px;
+  
+  }
+  
+  i:hover {
+    color: #e2a355; /* Change color on hover */
+    transform: scale(1.2); /* Slight zoom effect */
+    transition: 0.3s;
+  }
+  
+form input, form textarea, form button {
+    display: block;
+    width: 80%;
+    margin: 30px auto;
+    padding: 10px;
+    resize: none;
+    border: 1px solid #381410;
+}
+form button {
+    background: #ce8746;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+}
+
+
+footer {
+  background: #381410;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-section {
+  width: 30%;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  color: #ffcc00;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer-section a:hover {
+  color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-section {
+      width: 100%;
+  }
+  .col1,.col2{
+    width: 80%;
+  }
+}
